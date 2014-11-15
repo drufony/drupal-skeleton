@@ -1,1 +1,13 @@
 /vendor/
+/docroot/themes
+/docroot/profiles
+/docroot/modules
+/docroot/misc
+/docroot/includes
+/bin/*
+!bin/.gitkeep
+/docroot/sites/README.txt
+/docroot/sites/all/modules/README.txt
+/docroot/sites/all/themes/README.txt
+/docroot/sites/default/default.settings.php
+/docroot/sites/example.sites.php
