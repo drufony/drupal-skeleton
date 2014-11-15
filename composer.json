@@ -1,0 +1,87 @@
+{
+    "name": "drufony/drupal-skeleton",
+    "description": "Drupal 7 composer skeleton",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://drufony.github.io"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/drupal",
+                "version": "7.x-dev",
+                "dist": {
+                    "type": "tar",
+                    "url": "http://ftp.drupal.org/files/projects/drupal-7.x-dev.tar.gz"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "git://git.drupal.org/project/drupal.git",
+                    "reference": "7.x"
+                },
+                "autoload": {
+                    "classmap": ["includes/", "modules/", "profiles/", "themes/"]
+                },
+                "bin": [
+                    "scripts/drupal.sh",
+                    "scripts/password-hash.sh"
+                ],
+                "require": {
+                    "php": ">=5.2.4",
+                    "ext-date": "*",
+                    "ext-dom": "*",
+                    "ext-filter": "*",
+                    "ext-gd": "*",
+                    "ext-hash": "*",
+                    "ext-json": "*",
+                    "ext-pcre": "*",
+                    "ext-PDO": "*",
+                    "ext-session": "*",
+                    "ext-SimpleXML": "*",
+                    "ext-SPL": "*",
+                    "ext-xml": "*"
+                }
+            }
+        }
+    ],
+    "authors": [
+        {
+            "name": "Benjamin Doherty",
+            "email": "bjd@bangpound.org"
+        }
+    ],
+    "require": {
+        "drupal/drupal": "~7.0@dev",
+        "drupal/minimal": "7.*@dev",
+        "drupal/standard": "7.*@dev",
+        "bangpound/drupal-bridge": "1.0.*@dev",
+        "drush/drush": "dev-master"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Bangpound\\Bridge\\Drupal\\Composer\\ScriptHandler::installDrupal"
+        ],
+        "post-update-cmd": [
+            "Bangpound\\Bridge\\Drupal\\Composer\\ScriptHandler::installDrupal"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "bin-dir": "bin",
+        "preferred-install": "source"
+    },
+    "extra": {
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        },
+        "installer-paths": {
+            "docroot/sites/all/modules/{$name}/": ["type:drupal-module"],
+            "docroot/sites/all/themes/{$name}/": ["type:drupal-theme"],
+            "docroot/profiles/{$name}/": ["type:drupal-profile"],
+            "docroot/sites/all/drush/{$name}/": ["type:drupal-drush"]
+        },
+        "drupal-root": "docroot/"
+    }
+}
