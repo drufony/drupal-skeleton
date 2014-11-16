@@ -10,6 +10,41 @@
             "type": "package",
             "package": {
                 "name": "drupal/drupal",
+                "version": "7.33",
+                "dist": {
+                    "type": "tar",
+                    "url": "http://ftp.drupal.org/files/projects/drupal-7.33.tar.gz"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "git://git.drupal.org/project/drupal.git",
+                    "reference": "7.33"
+                },
+                "bin": [
+                    "scripts/drupal.sh",
+                    "scripts/password-hash.sh"
+                ],
+                "require": {
+                    "php": ">=5.2.4",
+                    "ext-date": "*",
+                    "ext-dom": "*",
+                    "ext-filter": "*",
+                    "ext-gd": "*",
+                    "ext-hash": "*",
+                    "ext-json": "*",
+                    "ext-pcre": "*",
+                    "ext-PDO": "*",
+                    "ext-session": "*",
+                    "ext-SimpleXML": "*",
+                    "ext-SPL": "*",
+                    "ext-xml": "*"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/drupal",
                 "version": "7.x-dev",
                 "dist": {
                     "type": "tar",
