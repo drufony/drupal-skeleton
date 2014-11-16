@@ -20,9 +20,6 @@
                     "url": "git://git.drupal.org/project/drupal.git",
                     "reference": "7.x"
                 },
-                "autoload": {
-                    "classmap": ["includes/", "modules/", "profiles/", "themes/"]
-                },
                 "bin": [
                     "scripts/drupal.sh",
                     "scripts/password-hash.sh"
