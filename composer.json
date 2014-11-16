@@ -104,6 +104,7 @@
         "installer-paths": {
             "docroot/sites/all/modules/{$name}/": ["type:drupal-module"],
             "docroot/sites/all/themes/{$name}/": ["type:drupal-theme"],
+            "docroot/sites/all/libraries/{$name}/": ["type:drupal-library"],
             "docroot/profiles/{$name}/": ["type:drupal-profile"],
             "docroot/sites/all/drush/{$name}/": ["type:drupal-drush"]
         },
