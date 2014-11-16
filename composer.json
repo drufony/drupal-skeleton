@@ -1,6 +1,7 @@
 {
     "name": "drufony/drupal-skeleton",
     "description": "Drupal 7 composer skeleton",
+    "type": "project",
     "repositories": [
         {
             "type": "composer",
