@@ -85,7 +85,7 @@
         }
     ],
     "require": {
-        "drupal/drupal": "7.33",
+        "drupal/drupal": "7.*@dev",
         "drupal/minimal": "7.*@dev",
         "drupal/standard": "7.*@dev",
         "bangpound/drupal-bridge": "~1.0@dev"
