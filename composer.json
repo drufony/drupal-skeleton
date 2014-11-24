@@ -11,15 +11,15 @@
             "type": "package",
             "package": {
                 "name": "drupal/drupal",
-                "version": "7.33",
+                "version": "7.34",
                 "dist": {
                     "type": "tar",
-                    "url": "http://ftp.drupal.org/files/projects/drupal-7.33.tar.gz"
+                    "url": "http://ftp.drupal.org/files/projects/drupal-7.34.tar.gz"
                 },
                 "source": {
                     "type": "git",
                     "url": "git://git.drupal.org/project/drupal.git",
-                    "reference": "7.33"
+                    "reference": "7.34"
                 },
                 "bin": [
                     "scripts/drupal.sh",
@@ -88,7 +88,7 @@
         "drupal/drupal": "7.*@dev",
         "drupal/minimal": "7.*@dev",
         "drupal/standard": "7.*@dev",
-        "bangpound/drupal-bridge": "~1.0@dev"
+        "drufony/drupal-bridge": "~1.0@dev"
     },
     "scripts": {
         "post-install-cmd": [
