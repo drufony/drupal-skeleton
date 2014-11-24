@@ -88,7 +88,7 @@
         "drupal/drupal": "7.34",
         "drupal/minimal": "7.*@dev",
         "drupal/standard": "7.*@dev",
-        "bangpound/drupal-bridge": "~1.0@dev"
+        "drufony/drupal-bridge": "~1.0"
     },
     "scripts": {
         "post-install-cmd": [
