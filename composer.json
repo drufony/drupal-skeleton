@@ -11,6 +11,8 @@
             "type": "package",
             "package": {
                 "name": "drupal/drupal",
+                "type": "drupal-core",
+                "license": "GPL-2.0+",
                 "version": "7.34",
                 "dist": {
                     "type": "tar",
@@ -46,6 +48,8 @@
             "type": "package",
             "package": {
                 "name": "drupal/drupal",
+                "type": "drupal-core",
+                "license": "GPL-2.0+",
                 "version": "7.x-dev",
                 "dist": {
                     "type": "tar",
