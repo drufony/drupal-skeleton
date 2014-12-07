@@ -16,6 +16,9 @@
  */
 define('DRUPAL_ROOT', getcwd());
 
-require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
-drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
+require_once DRUPAL_ROOT.'/../vendor/autoload.php';
+$c = new \Silex\Application();
+$c->register(new \Bangpound\Bridge\Drupal\BootstrapServiceProvider(), array('drupal.bootstrap.override' => \Bangpound\Bridge\Drupal\BootstrapServiceProvider::OVERRIDE_DATABASE));
+$c->boot();
+drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL, true, $c['drupal.bootstrap']);
 menu_execute_active_handler();

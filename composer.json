@@ -92,6 +92,8 @@
         "drupal/drupal": "7.*@dev",
         "drupal/minimal": "7.*@dev",
         "drupal/standard": "7.*@dev",
+        "silex/silex": "~2.0@dev",
+        "drufony/drupal-bootstrap": "~1.2@dev",
         "drufony/drupal-bridge": "~1.0@dev"
     },
     "scripts": {
